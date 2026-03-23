@@ -45,26 +45,6 @@ Sistema web de pedidos online inspirado no iFood, desenvolvido para uma lanchone
 
 ---
 
-## 🛠️ Tecnologias utilizadas
-
-### Frontend
-
-* React
-* HTML5
-* CSS3
-* JavaScript
-
-### Backend
-
-* Node.js
-* Express
-
-### Banco de Dados
-
-* (definir: SQLite / MongoDB)
-
----
-
 ## 📁 Estrutura do projeto
 
 ```
