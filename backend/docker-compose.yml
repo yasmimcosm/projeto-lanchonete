@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:15
+    container_name: lanchonete_db
+    environment:
+      POSTGRES_USER: hillan
+      POSTGRES_PASSWORD: Hi1986$#
+      POSTGRES_DB: lanchonete
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
