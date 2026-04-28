@@ -314,7 +314,7 @@ button:hover {
 
   .banner h2 {
     font-size: clamp(1.5rem, 6vw, 2.2rem);
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 
   button{
@@ -340,6 +340,7 @@ button:hover {
 
   .card {
     width: 100%;
+    max-width: 180px;
     padding-bottom: 15px;
   }
 
