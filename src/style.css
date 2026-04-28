@@ -9,15 +9,14 @@
 
 body {
   background-color: #f5f5f5;
-  padding-top: 00px;
 }
 
 /* HEADER */
 header {
   color: white;
-  padding: 15px 80px;
+  padding: 1rem 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
   top: 0;
@@ -31,8 +30,8 @@ header {
 }
 
 .logo__img {
-  width: 25vh;
-  margin-right: 20px;
+  width: clamp(100px, 12vw, 140px);
+  margin-right: 1.5rem;
 }
 
 .header__nav {
@@ -43,22 +42,18 @@ header {
 .header__nav ul {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 2rem;
 }
 
-.header__nav h1 {
-  padding-right: 80px;
-  font-size: 30px;
-}
 
 .header__nav a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: clamp(0.1rem, 1.3vw, 1.3rem);
   font-weight: 500;
   position: relative;
-  padding-right: 20px;
-  padding-bottom: 10px;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .header__nav a::after {
@@ -92,6 +87,7 @@ header {
 .login__link {
   background-color: #e8576f;
   text-decoration: none;
+  font-size: clamp(0.1rem, 1.3vw, 1.3rem);
   color: #F5F5F5;
   padding: 1vh 3.5vh;
   border-radius: 5px;
@@ -116,7 +112,7 @@ header {
   text-decoration: none; 
   color: #F5F5F5;
   position: relative;
-  font-size: 17px;
+  font-size: clamp(0.1rem, 1vw, 1rem);
   font-weight: 600;
   position: relative;
   padding-right: 20px;
@@ -135,7 +131,7 @@ header {
 .login span {
   color: #ffffff;
   font-size: 30px;
-  margin: 3vh;
+  margin: 1.5rem;
   position: relative;
   transition:
     color 0.3s ease,
@@ -159,13 +155,13 @@ header {
   min-height: 85vh;
   color: #ffffff;
   text-align: center;
-  padding: 130px 20px 0 20px;
+  padding: 10rem 2rem 0 2rem;
 }
 
 .banner h2 {
-  font-size: 38px;
+  font-size: clamp(0.1rem, 2.3rem, 2.5rem);
   font-weight: 600;
-  margin-top: 120px;
+  margin-top: 3rem;
 }
 
 .banner p {
@@ -206,7 +202,7 @@ button{
   border-radius: 8px;
   border-style: none;
   cursor: pointer;
-  padding: 1.5vh 3vh;
+  padding: 0.8rem 1.5rem;
   font-size: 18px;
   font-weight: 600;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
@@ -234,7 +230,6 @@ button:hover {
   gap: 20px;
   padding: 90px 130px 130px 130px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 /* CARD */
@@ -275,4 +270,91 @@ button:hover {
   color: gray;
   margin: 20px 15px;
   font-size: 15px;
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .logo__img {
+    width: clamp(80px, 30vw, 120px);
+    margin-right: 0rem;
+  }
+
+  .header__nav ul {
+    display: none;
+  }
+
+  .login__link {
+  padding: 0.7vh 2vh;
+  border-radius: 5px;
+  }
+
+  .login span{
+    margin-right: 0.1rem;
+    margin-left: 1rem;
+  }
+
+  .cadastro__link {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+
+  .banner {
+    padding: 10rem 2rem 0 2rem;
+  }
+
+  .banner h2 {
+    font-size: clamp(0.1rem, 2rem, 2.5rem);
+    font-weight: 600;
+    margin-top: 3rem;
+  }
+
+  button{
+    padding: 0.7rem 1.2rem;
+    font-size: 0.2rem;
+  }
+
+  .button__card {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.1rem;
+  }
+
+  .restaurantes {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: min(7rem, 50vw);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .card h3 {
+    margin: 20px 0 0 0;
+    font-size: 0.1rem;
+  }
+
+  .card p {
+    margin: 20px 15px;
+    font-size: 0.1rem;
+  }
 }
