@@ -330,8 +330,8 @@ button:hover {
   .restaurantes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
+    gap: 0.7rem;
+    padding: 2.5rem;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -340,7 +340,7 @@ button:hover {
 
   .card {
     width: 100%;
-    max-width: 180px;
+    max-width: 160px;
     padding-bottom: 15px;
   }
 
