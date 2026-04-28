@@ -347,11 +347,11 @@ button:hover {
 
   .card h3 {
     margin: 1rem 0 0 0;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .card p {
-    margin: 0.5rem 15px;
-    font-size: 0.5rem;
+    margin: 10px 15px 1rem 15px;
+    font-size: 0.6rem;
   }
 }
