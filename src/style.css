@@ -16,7 +16,7 @@ header {
   color: white;
   padding: 1rem 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -297,7 +297,7 @@ button:hover {
 
   .login span{
     margin-right: 0.1rem;
-    margin-left: 0.5rem;
+    margin-left: 0.9rem;
   }
 
   .cadastro__link {
@@ -307,13 +307,14 @@ button:hover {
   .search span {
     padding: 7.4px;
   }
+
   .banner {
     padding: 8rem 1.4rem 0 1.4rem;
   }
 
   .banner h2 {
     font-size: clamp(1.5rem, 6vw, 2.2rem);
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
 
   button{
@@ -343,12 +344,12 @@ button:hover {
   }
 
   .card h3 {
-    margin: 20px 0 0 0;
+    margin: 1rem 0 0 0;
     font-size: 0.9rem;
   }
 
   .card p {
-    margin: 20px 15px;
+    margin: 1rem 15px;
     font-size: 0.75rem;
   }
 }
