@@ -329,7 +329,7 @@ button:hover {
 
   .restaurantes {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
     padding: 1rem;
     justify-content: center;
@@ -351,6 +351,6 @@ button:hover {
 
   .card p {
     margin: 1rem 15px;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
   }
 }
