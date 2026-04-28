@@ -14,9 +14,8 @@ body {
 
 /* HEADER */
 header {
-  background-color: #202C59 /*252422*/;
   color: white;
-  padding: 30px 90px 30px 90px;
+  padding: 15px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,11 +23,16 @@ header {
   top: 0;
   width: 100%;
 
-  background: rgba(3, 31, 94, 0.8);
+  background: rgba(176, 196, 177, 0.8);
 
   backdrop-filter: blur(10px);
 
   z-index: 1000;
+}
+
+.logo__img {
+  width: 25vh;
+  margin-right: 20px;
 }
 
 .header__nav {
@@ -61,7 +65,7 @@ header {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #f56200;
+  background-color: #e8576f;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -86,7 +90,7 @@ header {
 }
 
 .login__link {
-  background-color: #f56200;
+  background-color: #e8576f;
   text-decoration: none;
   color: #F5F5F5;
   padding: 1vh 3.5vh;
@@ -103,7 +107,7 @@ header {
 
 .login__link:hover {
   background-color: #e2e2e2;
-  color: #ff6600;
+  color: #e8576f;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -124,15 +128,29 @@ header {
 }
 
 .cadastro__link:hover {
-  color: #ff6600;
+  color: #e8576f;
   transform: scale(1.05);
 }
 
+.login span {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 3vh;
+  position: relative;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.login span:hover {
+  color: #e8576f;
+  transform: scale(1.2);
+}
 
 /* BANNER */
 .banner {
   background-image: 
-    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("img/banners.png"); /*linear-gradient(135deg, #1d3059, #14213D);*/
     background-size: cover;
   background-position: center;
@@ -141,7 +159,7 @@ header {
   min-height: 85vh;
   color: #ffffff;
   text-align: center;
-  padding: 100px 20px 0 20px;
+  padding: 130px 20px 0 20px;
 }
 
 .banner h2 {
@@ -158,8 +176,7 @@ header {
   font-weight: 500;
 }
 
-span {
-  display: flex;
+.search span {
   background-color: #ffffff;
   color: #585858;
   justify-content: center;
@@ -181,8 +198,10 @@ span {
 }
 
 button{
-  background-color: #f56200;
+  background-color: #e8576f;
   color: white;
+  width: fit-content;
+  align-self: center;
   border: none;
   border-radius: 8px;
   border-style: none;
@@ -199,8 +218,8 @@ button{
 }
 
 button:hover {
-  background-color: #603213;
-  color: #ff6600;
+  background-color: #B0C4B1; /*B0C4B1*/
+  color: #4A5759;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -223,6 +242,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: white;
   width: 260px;
   border-radius: 12px;
@@ -247,26 +267,12 @@ button:hover {
 }
 
 .card h3 {
-  margin: 20px 0 5px 0;
+  margin: 20px 0 0 0;
   font-size: 19px;
 }
 
 .card p {
   color: gray;
-  margin-bottom: 20px;
+  margin: 20px 15px;
   font-size: 15px;
-}
-
-.card button {
-  background-color: #EB5E28;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  width: fit-content;
-  align-self: center;
-}
-
-.card button:hover {
-  background-color: #f57b0a;
 }
