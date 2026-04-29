@@ -1,6 +1,4 @@
 
-# 🍔 SnackGo
-
 Sistema web de pedidos online inspirado no iFood, desenvolvido para uma lanchonete local. O objetivo é facilitar a visualização de produtos e a realização de pedidos de forma rápida e prática.
 
 ---
